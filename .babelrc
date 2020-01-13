@@ -1,0 +1,25 @@
+{
+  "presets": [],
+  "plugins": [
+    "@babel/transform-react-jsx",
+    "transform-react-stateless-component-name"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        ["babili", {"mangle": false}]
+      ]
+    },
+    "development": {
+      "plugins": []
+  },
+    "test": {
+      "plugins": [
+      ],
+      "presets": [
+        "env",
+        "react"
+      ],
+    }
+  }
+}
